@@ -322,6 +322,14 @@ footer {
   background-color: transparent;
 }
 
+.post-blank {
+  height: 70px;
+}
+
+.utterances {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 @media (max-width: 576px) {
 	article {
