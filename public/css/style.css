@@ -55,8 +55,15 @@ body {
 
 a {
 	text-decoration: none;
-	color: #007bff;
 	background-color: transparent;
+}
+
+.a-title {
+	font-size: 120%;
+	font-family: "Noto Sans";
+	margin-bottom: 5px;
+	color: #ffffff;
+	text-transform: capitalize;
 }
 
 a:hover {
@@ -76,6 +83,10 @@ code {
 	font-family: "Menlo", "Consolas", monospace;
 	font-size: 0.8em;
 	margin: 0px;
+}
+
+li {
+	margin: 10px 0px;
 }
 
 .container {
@@ -126,19 +137,19 @@ code {
 }
 
 .sidebar-nav {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .nav-title {
-	font-size: 100%;
+	font-size: 110%;
 	font-family: "Noto Sans";
-	text-transform: uppercase;
 	border-bottom: 1px solid gray;
+	text-transform: capitalize;
 	margin-bottom: 5px;
 }
 
 a.nav-item {
-	font-size: 120%;
+	font-size: 110%;
 	font-family: "Noto Sans";
 	text-transform: capitalize;
 	color: #aaa;
@@ -298,16 +309,16 @@ footer {
 }
 
 .social {
-  margin-top: var(--spacer-2);
+  margin-top: 10px;
   font-size: 150%;
   white-space: normal;
   line-height: .5;
 }
 
 .social-icon {
-  padding: var(--spacer);
-  font-size: 150%;
-  color: #1c7ed6;
+  padding: 10px;
+  font-size: 120%;
+  color: #b8c8d6;
   background-color: transparent;
 }
 

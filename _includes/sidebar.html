@@ -12,37 +12,28 @@
 </div>
 
 <div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title">Pages</li>
-	  <li>
-	  	<a class="nav-item" href="/">Articles</a>
-	  </li>
-	  {% assign pages_list = site.pages %}
-	  {% for node in pages_list %}
-	    {% if node.title != null %}
-	      {% if node.layout == "page" %}
-	        <li>
-	        	<a class="nav-item" href="{{ node.url }}">
-	            	{{ node.title }}
-	            </a>
-	        </li>
-	      {% endif %}
-	    {% endif %}
-	  {% endfor %}
-	</ul>
+<a class="a-title" href="/about/">
+About
+</div>
+<div class="sidebar-item sidebar-nav">
+<a class="a-title" href="{{ root_url }}/{{ site.category_dir }}#jessay">
+Jessay
 </div>
 
 <div class="sidebar-item sidebar-nav">
   	<ul class="nav">
-			<li class="nav-title">Categories</li>
-	    {% for category in site.categories %}
-	    <li>
-	    	<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
-				<span class="name">{{ category | first }}</span>
-				<span class="badge">{{ category | last | size }}</span>
-	    	</a>
- 		</li>
-	    {% endfor %}
+			<li class="nav-title">Records</li>
+	    {% for category in site.categories -%}
+		{% assign categoryName = category|first %}
+			{% if categoryName != "jessay" -%}
+			<li>
+				<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
+					<span class="name">{{ category | first }}</span>
+					<span class="badge">{{ category | last | size }}</span>
+				</a>
+			</li>
+			{%- endif %}
+	    {%- endfor %}
 	  </nav>
 	</ul>
 </div>
@@ -57,7 +48,4 @@
         </li>
       {%- endfor %}
       </ul>
-</div>
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
 </div>
