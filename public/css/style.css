@@ -112,8 +112,7 @@ code {
 }
 
 .sidebar-brand > a {
-	font-size: 300%;
-	font-family: 'Gelasio';
+	font-size: 180%;
 	color: #fff;
 }
 
@@ -298,6 +297,20 @@ footer {
 	color: #ccc;
 }
 
+.social {
+  margin-top: var(--spacer-2);
+  font-size: 150%;
+  white-space: normal;
+  line-height: .5;
+}
+
+.social-icon {
+  padding: var(--spacer);
+  font-size: 150%;
+  color: #1c7ed6;
+  background-color: transparent;
+}
+
 
 @media (max-width: 576px) {
 	article {
@@ -337,3 +350,4 @@ footer {
 		display: none;
 	}
 }
+

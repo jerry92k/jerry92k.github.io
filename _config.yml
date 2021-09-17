@@ -18,13 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Monos
-email: ejjoo7994@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Themed by ejjoo
+title: Jerry's log
+email: jens92.k@gmail.com
+description: >- 
 baseurl: '' 
 url: http://jerry92k.github.io 
-github_username: ejjoo
+github_username: jerry92k
 highlighter: rouge
 svg:
   optimize: true
@@ -34,8 +33,10 @@ highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 category_dir: category/
 tag_dir: tag/
+remote_theme: vszhub/not-pure-poole
 
 # Exclude from processing.
 # The following items will not be processed, by default.
