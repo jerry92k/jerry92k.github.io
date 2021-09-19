@@ -1,3 +1,4 @@
+<!--
 <div class="sidebar-item sidebar-header">
 	<div class='sidebar-brand'>
 		<a href="/about/">{{ site.title }}</a>
@@ -10,34 +11,22 @@
 			</svg></a></li>
 	{%- endif -%}
 </div>
-
-<div class="sidebar-item sidebar-nav">
+-->
+<div class="sidebar-item">
 <a class="a-title" href="/about/">
 About
 </div>
-<div class="sidebar-item sidebar-nav">
+<div class="sidebar-item">
 <a class="a-title" href="{{ root_url }}/{{ site.category_dir }}#jessay">
 Jessay
 </div>
 
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title">Records</li>
-	    {% for category in site.categories -%}
-		{% assign categoryName = category|first %}
-			{% if categoryName != "jessay" -%}
-			<li>
-				<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
-					<span class="name">{{ category | first }}</span>
-					<span class="badge">{{ category | last | size }}</span>
-				</a>
-			</li>
-			{%- endif %}
-	    {%- endfor %}
-	  </nav>
-	</ul>
+<div class="sidebar-item">
+<!-- <a class="a-title" href="{{ root_url }}/{{ site.category_dir }}#Records">
+-->
+<a class="a-title" href="/records/">
+Records
 </div>
-
  <div class="social pure-menu pure-menu-horizontal">
       <ul class="social-icons pure-menu-list">
       {% for social in site.data.social -%}

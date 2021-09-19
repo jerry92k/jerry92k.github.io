@@ -105,16 +105,21 @@ li {
 .sidebar {
 	/*position: fixed;*/
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: column wrap;
 	flex: 0 0 220px;
 	padding: 15px;
+	padding-right: 10px;
 	z-index: 1;
-	background-color: #222;
+	background-color: rgb(104, 101, 101);
 	color: #fff;
 }
 
 .sidebar-item {
 	display: block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	
 }
 
 .sidebar ul {
@@ -124,7 +129,9 @@ li {
 
 .sidebar-brand > a {
 	font-size: 180%;
+	font-family: "Noto Sans";
 	color: #fff;
+	margin-right: 10px;
 }
 
 .lead {
@@ -133,7 +140,9 @@ li {
 }
 
 .sidebar-header {
-	margin-bottom: 50px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	margin-top: 0px;
 }
 
 .sidebar-nav {
@@ -143,6 +152,7 @@ li {
 .nav-title {
 	font-size: 110%;
 	font-family: "Noto Sans";
+	color: #fff;
 	border-bottom: 1px solid gray;
 	text-transform: capitalize;
 	margin-bottom: 5px;
@@ -309,7 +319,7 @@ footer {
 }
 
 .social {
-  margin-top: 10px;
+  margin-top: 0px;
   font-size: 150%;
   white-space: normal;
   line-height: .5;
@@ -353,14 +363,6 @@ footer {
 
 	.sidebar-nav {
 		margin: 0px;
-	}
-
-	.sidebar-item {
-		flex: 1 1 auto;
-	}
-
-	.sidebar-header {
-		margin-bottom: 0px;
 	}
 
 	.sidebar-footer {
