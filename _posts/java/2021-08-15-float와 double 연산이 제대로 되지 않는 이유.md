@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  float와 double 연산이 제대로 되지 않는 이유
-date:   2021-08-15 00:00:00 +0900
+date:   2021-08-15 00:00:00
 categories: java
 ---
 

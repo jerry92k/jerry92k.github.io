@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Switch Expressions
-date:   2021-09-05 00:00:00 +0900
+date:   2021-09-05 00:00:00
 categories: java
 ---
 

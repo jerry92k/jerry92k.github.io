@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Collection.toArray(T[])
-date:   2021-08-02 00:00:00 +0900
+date:   2021-08-02 00:00:00
 categories: java
 ---
 ### ArrayList는 자바로 개발을 하면서 가장 많이 쓰는 클래스 중 하나입니다.

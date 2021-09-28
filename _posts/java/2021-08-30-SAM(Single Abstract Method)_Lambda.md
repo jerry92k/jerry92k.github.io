@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  SAM(Single Abstract Method)_Lambda
-date:   2021-08-30 00:00:00 +0900
+date:   2021-08-30 00:00:00
 categories: java
 ---
 

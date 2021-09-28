@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  prefer_composition_over_inheritance
-date:   2021-08-22 00:00:00 +0900
+date:   2021-08-22 00:00:00
 categories: java
 ---
 
