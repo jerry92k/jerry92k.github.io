@@ -1,11 +1,12 @@
 ---
 layout: post
-title: LeetCode - 221.maximal Square.java
+title: LeetCode - 221 Maximal Square.java
 date: 2021-03-02 00:00:00
 categories: leetcode
 ---
 
 ```java
+
 
 class MaximalSqaure {
 
