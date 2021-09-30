@@ -5,8 +5,7 @@ date: 2021-03-02 00:00:00
 categories: leetcode
 ---
 
-```maximal_square
-
+```java
 
 class MaximalSqaure {
 
