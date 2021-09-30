@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1647 Minimum Deletions To Make Character Frequencies Unique.java
+title: LeetCode - 1647 Minimum Deletions To Make Character Frequencies Unique
 date: 2021-06-28 00:00:00
 categories: leetcode
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 79 Word Search.java
+title: LeetCode - 79 Word Search
 date: 2021-07-08 00:00:00
 categories: leetcode
 ---

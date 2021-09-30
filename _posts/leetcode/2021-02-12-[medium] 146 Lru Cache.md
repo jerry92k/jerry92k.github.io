@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 146 Lru Cache.js
+title: LeetCode - 146 Lru Cache
 date: 2021-02-12 00:00:00
 categories: leetcode
 ---

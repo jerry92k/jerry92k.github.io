@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 198 House Robber.java
+title: LeetCode - 198 House Robber
 date: 2021-06-06 00:00:00
 categories: leetcode
 ---

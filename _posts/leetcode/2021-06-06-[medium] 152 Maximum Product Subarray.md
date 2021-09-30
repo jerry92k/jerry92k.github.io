@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 152 Maximum Product Subarray.java
+title: LeetCode - 152 Maximum Product Subarray
 date: 2021-06-06 00:00:00
 categories: leetcode
 ---

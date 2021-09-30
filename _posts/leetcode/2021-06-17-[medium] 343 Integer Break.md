@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 343 Integer Break.java
+title: LeetCode - 343 Integer Break
 date: 2021-06-17 00:00:00
 categories: leetcode
 ---

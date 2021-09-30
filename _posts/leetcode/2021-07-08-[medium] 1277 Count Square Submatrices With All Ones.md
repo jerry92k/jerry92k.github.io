@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1277 Count Square Submatrices With All Ones.java
+title: LeetCode - 1277 Count Square Submatrices With All Ones
 date: 2021-07-08 00:00:00
 categories: leetcode
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 621 Task Scheduler.java
+title: LeetCode - 621 Task Scheduler
 date: 2021-06-25 00:00:00
 categories: leetcode
 ---

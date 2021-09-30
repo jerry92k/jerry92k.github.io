@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 2 Add Two Numbers.java
+title: LeetCode - 2 Add Two Numbers
 date: 2021-02-24 00:00:00
 categories: leetcode
 ---

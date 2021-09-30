@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1578 Minimum Deletion Cost To Avoid Repeating Letters.java
+title: LeetCode - 1578 Minimum Deletion Cost To Avoid Repeating Letters
 date: 2021-06-25 00:00:00
 categories: leetcode
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 56 Merge Intervals.java
+title: LeetCode - 56 Merge Intervals
 date: 2021-02-23 00:00:00
 categories: leetcode
 ---

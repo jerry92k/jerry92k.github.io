@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1048 Longest String Chain.java
+title: LeetCode - 1048 Longest String Chain
 date: 2021-07-17 00:00:00
 categories: leetcode
 ---

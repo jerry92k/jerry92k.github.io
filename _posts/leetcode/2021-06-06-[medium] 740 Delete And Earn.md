@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 740 Delete And Earn.java
+title: LeetCode - 740 Delete And Earn
 date: 2021-06-06 00:00:00
 categories: leetcode
 ---

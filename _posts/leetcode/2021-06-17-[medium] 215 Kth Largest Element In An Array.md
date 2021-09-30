@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 215 Kth Largest Element In An Array.java
+title: LeetCode - 215 Kth Largest Element In An Array
 date: 2021-06-17 00:00:00
 categories: leetcode
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1029 Two City Scheduling.java
+title: LeetCode - 1029 Two City Scheduling
 date: 2021-07-05 00:00:00
 categories: leetcode
 ---

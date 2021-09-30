@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 139 Word Break.java
+title: LeetCode - 139 Word Break
 date: 2021-06-06 00:00:00
 categories: leetcode
 ---

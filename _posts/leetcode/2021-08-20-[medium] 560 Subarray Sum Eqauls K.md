@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 560 Subarray Sum Eqauls K.java
+title: LeetCode - 560 Subarray Sum Eqauls K
 date: 2021-08-20 00:00:00
 categories: leetcode
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1249 Minimum Remove To Make Valid Parentheses.java
+title: LeetCode - 1249 Minimum Remove To Make Valid Parentheses
 date: 2021-09-09 00:00:00
 categories: leetcode
 ---

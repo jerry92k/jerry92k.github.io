@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 935 Knight Dialer.java
+title: LeetCode - 935 Knight Dialer
 date: 2021-06-25 00:00:00
 categories: leetcode
 ---

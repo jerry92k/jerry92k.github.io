@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 165 Compare Version Numbers.js
+title: LeetCode - 165 Compare Version Numbers
 date: 2021-02-16 00:00:00
 categories: leetcode
 ---

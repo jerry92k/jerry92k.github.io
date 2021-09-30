@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 316 Remove Duplicate Letters.java
+title: LeetCode - 316 Remove Duplicate Letters
 date: 2021-07-05 00:00:00
 categories: leetcode
 ---

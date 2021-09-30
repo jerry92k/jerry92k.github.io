@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 210 Course Schedule II.java
+title: LeetCode - 210 Course Schedule II
 date: 2021-07-08 00:00:00
 categories: leetcode
 ---

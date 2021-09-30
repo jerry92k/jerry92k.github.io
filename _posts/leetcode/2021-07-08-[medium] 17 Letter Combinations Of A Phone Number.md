@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 17 Letter Combinations Of A Phone Number.java
+title: LeetCode - 17 Letter Combinations Of A Phone Number
 date: 2021-07-08 00:00:00
 categories: leetcode
 ---

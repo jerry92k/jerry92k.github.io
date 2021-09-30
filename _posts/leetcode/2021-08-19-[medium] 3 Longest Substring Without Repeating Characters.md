@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 3 Longest Substring Without Repeating Characters.java
+title: LeetCode - 3 Longest Substring Without Repeating Characters
 date: 2021-08-19 00:00:00
 categories: leetcode
 ---

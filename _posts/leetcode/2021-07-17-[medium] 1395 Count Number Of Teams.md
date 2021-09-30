@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1395 Count Number Of Teams.java
+title: LeetCode - 1395 Count Number Of Teams
 date: 2021-07-17 00:00:00
 categories: leetcode
 ---

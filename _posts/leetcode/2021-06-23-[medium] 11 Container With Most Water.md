@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 11 Container With Most Water.java
+title: LeetCode - 11 Container With Most Water
 date: 2021-06-23 00:00:00
 categories: leetcode
 ---

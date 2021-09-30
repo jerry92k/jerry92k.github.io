@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 647 Palindromic Substrings.java
+title: LeetCode - 647 Palindromic Substrings
 date: 2021-06-07 00:00:00
 categories: leetcode
 ---

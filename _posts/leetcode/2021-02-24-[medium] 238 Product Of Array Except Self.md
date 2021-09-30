@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 238 Product Of Array Except Self.java
+title: LeetCode - 238 Product Of Array Except Self
 date: 2021-02-24 00:00:00
 categories: leetcode
 ---

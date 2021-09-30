@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 322 Coin Change.java
+title: LeetCode - 322 Coin Change
 date: 2021-06-06 00:00:00
 categories: leetcode
 ---

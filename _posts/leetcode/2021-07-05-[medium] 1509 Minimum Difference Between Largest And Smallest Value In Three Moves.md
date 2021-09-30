@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1509 Minimum Difference Between Largest And Smallest Value In Three Moves.java
+title: LeetCode - 1509 Minimum Difference Between Largest And Smallest Value In Three Moves
 date: 2021-07-05 00:00:00
 categories: leetcode
 ---

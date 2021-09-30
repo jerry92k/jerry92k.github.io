@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1465 Maximum Area Of A Piece Of Cake After Horizontal And Vertical Cuts.java
+title: LeetCode - 1465 Maximum Area Of A Piece Of Cake After Horizontal And Vertical Cuts
 date: 2021-06-25 00:00:00
 categories: leetcode
 ---

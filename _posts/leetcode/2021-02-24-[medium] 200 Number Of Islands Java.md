@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 200 Number Of Islands Java.java
+title: LeetCode - 200 Number Of Islands Java
 date: 2021-02-24 00:00:00
 categories: leetcode
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 718 Maximum Length Of Repeated Subarray.java
+title: LeetCode - 718 Maximum Length Of Repeated Subarray
 date: 2021-06-07 00:00:00
 categories: leetcode
 ---

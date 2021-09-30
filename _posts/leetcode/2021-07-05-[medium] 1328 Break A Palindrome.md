@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1328 Break A Palindrome.java
+title: LeetCode - 1328 Break A Palindrome
 date: 2021-07-05 00:00:00
 categories: leetcode
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1423 Maximum Points You Can Obtain From Cards.java
+title: LeetCode - 1423 Maximum Points You Can Obtain From Cards
 date: 2021-06-13 00:00:00
 categories: leetcode
 ---

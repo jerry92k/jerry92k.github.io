@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 91 Decode Ways.js
+title: LeetCode - 91 Decode Ways
 date: 2021-02-23 00:00:00
 categories: leetcode
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1348 Tweet Counts Per Frequency With Treemap.java
+title: LeetCode - 1348 Tweet Counts Per Frequency With Treemap
 date: 2021-05-27 00:00:00
 categories: leetcode
 ---

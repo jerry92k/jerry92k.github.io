@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 253 Meeting Rooms2.java
+title: LeetCode - 253 Meeting Rooms2
 date: 2021-06-17 00:00:00
 categories: leetcode
 ---

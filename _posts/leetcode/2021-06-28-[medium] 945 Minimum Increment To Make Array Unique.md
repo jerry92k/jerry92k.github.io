@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 945 Minimum Increment To Make Array Unique.java
+title: LeetCode - 945 Minimum Increment To Make Array Unique
 date: 2021-06-28 00:00:00
 categories: leetcode
 ---

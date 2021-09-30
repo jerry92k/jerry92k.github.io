@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 5 Longest Palindromic Substring.java
+title: LeetCode - 5 Longest Palindromic Substring
 date: 2021-02-25 00:00:00
 categories: leetcode
 ---

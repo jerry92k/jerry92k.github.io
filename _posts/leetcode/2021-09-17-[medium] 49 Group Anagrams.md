@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 49 Group Anagrams.java
+title: LeetCode - 49 Group Anagrams
 date: 2021-09-17 00:00:00
 categories: leetcode
 ---

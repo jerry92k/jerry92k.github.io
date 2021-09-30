@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 277 Find The Celebrity.java
+title: LeetCode - 277 Find The Celebrity
 date: 2021-06-25 00:00:00
 categories: leetcode
 ---

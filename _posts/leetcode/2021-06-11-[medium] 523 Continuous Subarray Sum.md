@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 523 Continuous Subarray Sum.java
+title: LeetCode - 523 Continuous Subarray Sum
 date: 2021-06-11 00:00:00
 categories: leetcode
 ---

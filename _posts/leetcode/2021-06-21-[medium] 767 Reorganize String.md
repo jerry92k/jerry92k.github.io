@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 767 Reorganize String.java
+title: LeetCode - 767 Reorganize String
 date: 2021-06-21 00:00:00
 categories: leetcode
 ---

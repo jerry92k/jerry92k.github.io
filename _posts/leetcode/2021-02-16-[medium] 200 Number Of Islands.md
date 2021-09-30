@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 200 Number Of Islands.js
+title: LeetCode - 200 Number Of Islands
 date: 2021-02-16 00:00:00
 categories: leetcode
 ---

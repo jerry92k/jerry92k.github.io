@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 1167 Minimum Cost To Connect Sticks.java
+title: LeetCode - 1167 Minimum Cost To Connect Sticks
 date: 2021-07-05 00:00:00
 categories: leetcode
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - 134 Gas Station.java
+title: LeetCode - 134 Gas Station
 date: 2021-06-25 00:00:00
 categories: leetcode
 ---
