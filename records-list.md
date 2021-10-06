@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Records
+title: 배움 기록
 permalink: /records/
 ---
 
 ### [Java](/category/#java)
-### [CS](/category/#cs)
-### [Leetcode](/category/#leetcode)
+### [공통기술](/category/#cs)
+### [알고리즘 코딩 - Leetcode](/category/#leetcode)
