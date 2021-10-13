@@ -43,109 +43,69 @@ Spring Session은 외부 저장소와의 HttpSession의 연동을 지원하여 �
 
 
 
-### Spring Session - JDBC 예제코드
+### A. Spring - Spring Session - JDBC
 
-
-
-build.gradle
-
+#### Spring configuration
 ```java
-dependencies {
-   ...
-    compile("org.springframework.session:spring-session-jdbc")
-	...
-}
-```
+@EnableJdbcHttpSession 
+public class Config {
 
-
-
-application.properties
-
-```java
-spring:
-    session:
-        store-type: jdbc
-        jdbc:
-            initialize-schema: always
-    datasource:
-        url: jdbc:h2:mem:test
-        username: sa
-        passsword:
-    h2:
-        console:
-            enabled: true
-```
-
-- spring.session.jdbc.initialize-schema=always 
-
-  session 저장용 테이블 자동 생성
-
-  =>  embedded가 아니라면 session에 사용하는 SPRING_SESSION, SPRING_SESSION_ATTRIBUTES가 자동으로 생성되지 않습니다.
-
-
-
-SecurityConfig.java
-
-```java
-/*
- * Copyright 2014-2018 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-package sample.config;
-
-import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-
-/**
- * Spring Security configuration.
- *
- * @author Rob Winch
- * @author Vedran Pavic
- */
-@Configuration
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
-	// @formatter:off
-	@Override
-	public void configure(WebSecurity web) {
-		web
-			.ignoring().requestMatchers(PathRequest.toH2Console()); 
+	@Bean
+	public EmbeddedDatabase dataSource() {
+		return new EmbeddedDatabaseBuilder() 
+				.setType(EmbeddedDatabaseType.H2).addScript("org/springframework/session/jdbc/schema-h2.sql").build();
 	}
-	// @formatter:on
 
-	// @formatter:off
-	// tag::config[]
-	@Override
-	protected void configure(HttpSecurity http) throws Exception {
-		http
-			.authorizeRequests((authorize) -> authorize
-				.requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
-				.anyRequest().authenticated()
-			)
-			.formLogin((formLogin) -> formLogin
-				.permitAll()
-			);
+	@Bean
+	public PlatformTransactionManager transactionManager(DataSource dataSource) {
+		return new DataSourceTransactionManager(dataSource); 
 	}
-	// end::config[]
-	// @formatter:on
 
 }
 ```
+- @EnableJdbcHttpSession 이 springSessionRepositoryFilter를 생성합니다.
+- springSessionRepositoryFilter은 Filter 인터페이스를 implements 합니다.
+- springSessionRepositoryFilter을 이용해 Servlet Container에서 생성하는 HttpSession을 대신하여 Spring Session이 HttpSession을 생성합니다.
+- Servlet Container는 springSessionRepositoryFilter이 생성한 HttpSession을 사용하게 됩니다.
+
+
+#### Config 클래스를 로드하기 위한 initialization
+```java
+public class Initializer extends AbstractHttpSessionApplicationInitializer { 
+
+	public Initializer() {
+		super(Config.class); 
+	}
+
+}
+```
+
+### B. Spring Boot - Spring Session - JDBC
+
+
+#### application.properties
+
+```properties
+# 세션을 저장할 스토리지 타입
+spring.session.store-type=jdbc 
+# 세션 타임아웃 설정
+server.servlet.session.timeout=
+# 데이터베이스 생성 타입
+spring.session.jdbc.initialize-schema=embedded 
+# 데이터베이스 스키마가 저장될 경로
+spring.session.jdbc.schema=classpath:org/springframework/session/jdbc/schema-@@platform@@.sql
+# 데이터베이스에 세션을 저장할 테이블명
+spring.session.jdbc.table-name=SPRING_SESSION
+# 데이터베이스 호스트 주소. 데이터베이터명도 함께 명시
+spring.datasource.url=
+# 데이터베이스 접속 계정 ID
+spring.datasource.username=
+# 데이터베이스 접속 계정 비밀번호
+spring.datasource.password=
+```
+
+- Spring Boot를 사용하면 Spring을 사용할 때 보다 간단합니다.
+- Spring Boot는 위 설정 정보를 읽어서 @EnableJdbcHttpSession 효과와 동일하게 springSessionRepositoryFilter 빈을 생성하고 Servlet Container의 HttpSession을 대신합니다.
 
 
 [참고]
