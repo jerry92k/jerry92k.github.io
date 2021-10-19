@@ -1,0 +1,40 @@
+<!--
+<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/about/">{{ site.title }}</a>
+	</div>
+	<p class="lead">{{ site.description }}</p>
+	{%- if social.github -%}
+		<a rel="me" href="https://github.com/{{ social.github | cgi_escape | escape }}" title="{{ social.github | escape }}">
+			<svg class="svg-icon grey">
+				<use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}" />
+			</svg></a></li>
+	{%- endif -%}
+</div>
+-->
+<div class="sidebar-item">
+<a class="a-title" href="/about/">
+어바웃
+</div>
+<div class="sidebar-item">
+<a class="a-title" href="{{ root_url }}/{{ site.category_dir }}#jessay">
+제세이
+</div>
+
+<div class="sidebar-item">
+<!-- <a class="a-title" href="{{ root_url }}/{{ site.category_dir }}#Records">
+-->
+<a class="a-title" href="/records/">
+배움 기록
+</div>
+ <div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      {% for social in site.data.social -%}
+        <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="{{ social.url }}">
+            <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
+          </a>
+        </li>
+      {%- endfor %}
+      </ul>
+</div>

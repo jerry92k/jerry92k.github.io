@@ -113,6 +113,16 @@ li {
 	background-color: rgb(104, 101, 101);
 	color: #fff;
 }
+.right-space {
+	display: flex;
+	flex-flow: column wrap;
+	flex: 0 0 220px;
+	padding: 15px;
+	padding-right: 10px;
+	z-index: 1;
+	background-color: rgb(104, 101, 101);
+	color: #fff;
+}
 
 .sidebar-item {
 	display: block;
@@ -363,6 +373,11 @@ strong {
 
 	.sidebar {
 		font-size: 0.8em;
+		flex: 0 0 auto;
+		flex-flow: row nowrap;
+		height: auto;
+	}
+	.right-space{
 		flex: 0 0 auto;
 		flex-flow: row nowrap;
 		height: auto;
