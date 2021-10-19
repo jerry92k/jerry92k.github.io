@@ -343,7 +343,10 @@ footer {
   margin-right: 0;
 }
 
-strong { font-weight: bold; }
+strong {
+	font-family: NanumGothicBold;
+    font-style: normal;
+ }
 
 @media (max-width: 576px) {
 	article {
