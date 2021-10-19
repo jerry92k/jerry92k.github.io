@@ -29,8 +29,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Arial, Noto Sans KR, "돋움", Dotum, AppleGothic";
-  --font-family-serif: "Arial, Noto Sans KR, "돋움", Dotum, AppleGothic";
+  --font-family-sans-serif: "Nanum Gothic";
+  --font-family-serif: "Nanum Gothic";
 }
 
 * {
@@ -49,7 +49,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Arial, Noto Sans KR, "돋움", Dotum, AppleGothic', serif;
+	font-family: 'Nanum Gothic', serif;
 	color: #2c3e50;
 }
 
@@ -60,7 +60,7 @@ a {
 
 .a-title {
 	font-size: 120%;
-	font-family: "Arial, Noto Sans KR, "돋움", Dotum, AppleGothic";
+	font-family: "Nanum Gothic";
 	margin-bottom: 5px;
 	color: #ffffff;
 	text-transform: capitalize;
@@ -80,7 +80,7 @@ pre {
 }
 
 code {
-	font-family: "Arial, Noto Sans KR, "돋움", Dotum, AppleGothic", monospace;
+	font-family: "Nanum Gothic", monospace;
 	font-size: 0.8em;
 	margin: 0px;
 }
@@ -129,7 +129,7 @@ li {
 
 .sidebar-brand > a {
 	font-size: 180%;
-	font-family: "Arial, Noto Sans KR, "돋움", Dotum, AppleGothic";
+	font-family: "Nanum Gothic";
 	color: #fff;
 	margin-right: 10px;
 }
@@ -151,7 +151,7 @@ li {
 
 .nav-title {
 	font-size: 110%;
-	font-family: "Arial, Noto Sans KR, "돋움", Dotum, AppleGothic";
+	font-family: "Nanum Gothic";
 	color: #fff;
 	border-bottom: 1px solid gray;
 	text-transform: capitalize;
@@ -160,7 +160,7 @@ li {
 
 a.nav-item {
 	font-size: 110%;
-	font-family: "Arial, Noto Sans KR, "돋움", Dotum, AppleGothic";
+	font-family: "Nanum Gothic";
 	text-transform: capitalize;
 	color: #aaa;
 }
@@ -252,7 +252,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-	font-family: "Arial, Noto Sans KR, "돋움", Dotum, AppleGothic";
+	font-family: "Nanum Gothic";
 	color: #000000;
   	margin-bottom: 0;
 	margin-top: 2em;
@@ -304,14 +304,14 @@ header.home {
 
 footer {
 	padding-top: 15px;
-	font-family: 'Arial, Noto Sans KR, "돋움", Dotum, AppleGothic';
+	font-family: 'Nanum Gothic';
 }
 
 .sidebar-footer {
 	margin-top: 80px;
 	font-size: 0.75em;
 	font-weight: lighter;
-	font-family: "Arial, Noto Sans KR, "돋움", Dotum, AppleGothic";
+	font-family: "Nanum Gothic";
 	line-height: 1.5;
 }
 
