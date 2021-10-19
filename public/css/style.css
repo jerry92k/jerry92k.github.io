@@ -307,6 +307,7 @@ footer {
 	font-family: 'Nanum Gothic';
 }
 
+
 .sidebar-footer {
 	margin-top: 80px;
 	font-size: 0.75em;
@@ -341,6 +342,8 @@ footer {
   margin-left: 0;
   margin-right: 0;
 }
+
+strong { font-weight: bold; }
 
 @media (max-width: 576px) {
 	article {
