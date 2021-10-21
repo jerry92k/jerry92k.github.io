@@ -5,6 +5,6 @@ permalink: /records/
 ---
 
 ### [Java](/category/#java)
-### [공통기술](/category/#comm)
+### [소프트웨어공학설계](/category/#se)
 ### [알고리즘 코딩 - Leetcode](/category/#leetcode)
 ### [멘토링](/category/#mentoring)
