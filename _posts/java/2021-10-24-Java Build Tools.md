@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java Build Tools : Ant, Maven 그리고 Gradle
+title:  Java Build Tools - Ant, Maven 그리고 Gradle
 date:   2021-10-24 00:00:00
 categories: java
 ---
