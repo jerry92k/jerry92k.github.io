@@ -71,4 +71,4 @@ Spring 4에서는 @Conditional을 도입하였습니다.
 
 [javadevjournal - How Spring Boot auto-configuration works](https://www.javadevjournal.com/spring-boot/how-spring-boot-auto-configuration-works/)
 
-[javadevjournal - Spring Boot Auto Configuration](
+[javadevjournal - Spring Boot Auto Configuration](https://www.javadevjournal.com/spring/spring-boot-auto-configuration/)
