@@ -359,6 +359,15 @@ strong {
     font-style: normal;
  }
 
+ .record-category{
+	 padding: 0 1% 0;
+ }
+
+ .category-title{
+	 padding-bottom: 2%;
+	 font-size: 20px;
+ }
+
 @media (max-width: 576px) {
 	article {
 		font-size: 0.9em;
