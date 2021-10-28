@@ -63,9 +63,9 @@ Constraints:
 1 <= n <= 5000
 
 ### 풀이
-[전략]
-1. 가로 기준, 세로 기준으로 바운더리에서 부터 각각의 선 까지 크기를 구한다.
-2. 가로의 최대값과 세로의 최대값을 곱한 것이 최대 area가 된다.
+[전략] -1
+1. 각다이얼의 next dial을 계산해서 HashMap으로 저장
+2. 다이얼의 길이만큼 순환하며 이전 dial을 queue에 넣고 하나씩 빼어 가능한 조합을 다시 queue로 넣길 반복하여 모든 조합을 구함
 
 ```java
 import java.util.*;
@@ -77,7 +77,7 @@ class Solution {
         if (n == 1) {
             return 10;
         }
-        int[][] dials = { { 1, 2, 3 }, { 4, 5, 6, }, { 7, 8, 9 }, { -1, 0, -1 } };
+        int[][] dials = {{ 1, 2, 3 }, { 4, 5, 6, }, { 7, 8, 9 }, { -1, 0, -1 }};
 
         HashMap<Integer, ArrayList<Integer>> dialstoNextDial = new HashMap<>();
         Queue<Integer> nextDialqueue = new LinkedList<>();
@@ -142,7 +142,15 @@ class Solution {
             }
         }
     }
+}
 
+```
+
+[전략] -2
+1. dfs로 풀기
+2. 각 다이얼을 시작점으로 길이 n만큼 가능한 조합을 탐색
+
+```java
     public int knightDialer2(int n) {
 
         if (n == 1) {
@@ -150,21 +158,18 @@ class Solution {
         }
         int[][] dials = { { 1, 2, 3 }, { 4, 5, 6, }, { 7, 8, 9 }, { -1, 0, -1 } };
 
-        // HashMap<Integer, ArrayList<Integer>> dialstoNextDial = new HashMap<>();
-        // Queue<Integer> nextDialqueue = new LinkedList<>();
-
-        int count = 0;
+        long count = 0;
         int divideVal = 1000000007;
         for (int i = 0; i < dials.length; i++) {
             for (int j = 0; j < dials[i].length; j++) {
                 if (dials[i][j] < 0) {
                     continue;
                 }
-                count += dfsNextDial(dials, i, j, n, 1) % divideVal;
+                count += dfsNextDial(dials, i, j, n, 1);
             }
         }
 
-        return count;
+        return count% divideVal;
     }
 
     public int dfsNextDial(int[][] dials, int horizonIdx, int verticalIdx, int n, int curTime) {
@@ -186,7 +191,14 @@ class Solution {
         }
         return 0;
     }
+```
 
+[전략] -3
+1. 1번 방법과 유사하게, 특정 dial을 시작으로 가능한 next dial을 HashMap으로 저장하여
+2. DP 용으로 2차원 배열을 생성한다. row는 다이얼의 길이, column은 각 길이의 마지막 dial이다.
+   => dp[row][column] 이면 길이 row인 모든 dial 조합중, 마지막 dial column의 빈도수
+
+```java
     public int knightDialer3(int n) {
 
         if (n == 1) {
@@ -208,30 +220,30 @@ class Solution {
         }
         int divideVal = 1000000007;
         int[][] dp = new int[n][10];
-        for (int i = 0; i < n; i++) {
+
+        for(int j=0; j<10; j++){
+             dp[0][j] = 1;
+        }
+
+        for (int i = 1; i < n; i++) {
             for (int j = 0; j < 10; j++) {
-                if (i == 0) {
-                    dp[i][j] = 1;
-                } else {
-                    if (dp[i - 1][j] > 0) {
-                        ArrayList<Integer> nextDials = dialstoNextDial.get(j);
-                        for (int t = 0; t < nextDials.size(); t++) {
-                            int prevDialTime = nextDials.get(t);
-                            dp[i][prevDialTime] = (dp[i][prevDialTime] + dp[i - 1][j]) % divideVal;
-                        }
+
+                if (dp[i - 1][j] > 0) {
+                    ArrayList<Integer> nextDials = dialstoNextDial.get(j);
+                    for(int nextDial : nextDials){
+                        dp[i][nextDial] = (dp[i][nextDial]+dp[i - 1][j])% divideVal;
                     }
                 }
+                
             }
-
         }
-        int sum = 0;
+        long sum = 0;
         for (int j = 0; j < 10; j++) {
-            sum = (sum + dp[n - 1][j]) % divideVal;
+            sum = (sum + dp[n - 1][j]);
         }
 
-        return sum;
+        return sum % divideVal;
     }
 
-}
 ```
 
