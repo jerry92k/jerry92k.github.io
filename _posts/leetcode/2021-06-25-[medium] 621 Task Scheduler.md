@@ -54,10 +54,6 @@ tasks[i] is upper-case English letter.
 The integer n is in the range [0, 100].
 
 ### 풀이
-[전략] -1
-1. 각다이얼의 next dial을 계산해서 HashMap으로 저장
-2. 다이얼의 길이만큼 순환하며 이전 dial을 queue에 넣고 하나씩 빼어 가능한 조합을 다시 queue로 넣길 반복하여 모든 조합을 구함
-
 
 [전략]
 1. 알파벳별 빈도수를 카운트 하여 정렬하고

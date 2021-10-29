@@ -5,33 +5,50 @@ date: 2021-06-25 00:00:00
 categories: leetcode
 ---
 
-```java
-import java.util.HashMap;
-import java.util.Map;
+# 277 Find The Celebrity
 
-/*
+### 문제정의
 Suppose you are at a party with n people (labeled from 0 to n - 1), and among them, there may exist one celebrity. The definition of a celebrity is that all the other n - 1 people know him/her, but he/she does not know any of them.
 
 Now you want to find out who the celebrity is or verify that there is not one. The only thing you are allowed to do is to ask questions like: "Hi, A. Do you know B?" to get information about whether A knows B. You need to find out the celebrity (or verify there is not one) by asking as few questions as possible (in the asymptotic sense).
 
 You are given a helper function bool knows(a, b) which tells you whether A knows B. Implement a function int findCelebrity(n). There will be exactly one celebrity if he/she is in the party. Return the celebrity's label if there is a celebrity in the party. If there is no celebrity, return -1.
 
- 
+### 예시
 
 Example 1:
 
-
 Input: graph = [[1,1,0],[0,1,0],[1,1,1]]
 Output: 1
-Explanation: There are three persons labeled with 0, 1 and 2. 
-graph[i][j] = 1 means person i knows person j, 
-    otherwise graph[i][j] = 0 means person i does not know person j. 
-The celebrity is the person labeled as 1 because both 0 and 2 know him but 1 does not know anybody.
 
-*/
+Explanation: There are three persons labeled with 0, 1 and 2. graph[i][j] = 1 means person i knows person j, otherwise graph[i][j] = 0 means person i does not know person j. The celebrity is the person labeled as 1 because both 0 and 2 know him but 1 does not know anybody.
 
-/* The knows API is defined in the parent class Relation.
-      boolean knows(int a, int b); */
+Example 2:
+
+Input: graph = [[1,0,1],[1,1,0],[0,1,1]]
+Output: -1
+
+Explanation: There is no celebrity.
+ 
+### 제약사항
+Constraints:
+
+n == graph.length
+n == graph[i].length
+2 <= n <= 100
+graph[i][j] is 0 or 1.
+graph[i][i] == 1
+
+### 풀이
+
+[전략] -1
+- 이중 for문을 이용하여 각persone이 celebrity인지 체크
+
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+
 
 public class Solution extends Relation {
 
@@ -58,7 +75,16 @@ public class Solution extends Relation {
         }
         return -1;
     }
+}
+```
 
+[전략] -2
+1. 노드를 순회하며 celebrity 후보를 찾는다.
+    - celebrity 후보가 아는 사람이 생길 경우에는 더이상 후보가 될 수 없음.
+    - celebrity 후보가 아는 사람은 새로운 celebrity 후보가 됨
+2. 찾은 celebrity 대상으로, celebrity 후보를 모르는 person이 있는지, celebrity가 아는 person이 있는지 체크
+   
+```java
     // logical deduction
     public int findCelebrity(int n) {
 
