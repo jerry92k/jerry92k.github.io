@@ -13,7 +13,7 @@ categories: se
 GET /users/1 HTTP/1.1
 Host: api.example.com
 ```
-
+ 
 
 
 "REST는 자원 중심적인 요청과 응답" 관점에서 보면,
