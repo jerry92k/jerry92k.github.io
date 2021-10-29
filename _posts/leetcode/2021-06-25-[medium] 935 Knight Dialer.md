@@ -70,14 +70,18 @@ Constraints:
 ```java
 import java.util.*;
 
-class Solution {
+class Solution{
 
     public int knightDialer(int n) {
 
         if (n == 1) {
             return 10;
         }
-        int[][] dials = {{1,2,3},{4,5,6},{7,8,9},{-1,0,-1 }};
+        int[][] dials = new int[4][];
+        dials[0] = new int[]{1,2,3};
+        dials[1] = new int[]{4,5,6};
+        dials[2] = new int[]{7,8,9};
+        dials[3] = new int[]{-1,0,-1};
 
         HashMap<Integer, ArrayList<Integer>> dialstoNextDial = new HashMap<>();
         Queue<Integer> nextDialqueue = new LinkedList<>();
