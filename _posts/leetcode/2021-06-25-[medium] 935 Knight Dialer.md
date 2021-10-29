@@ -91,13 +91,9 @@ class Solution{
                 if (dials[i][j] < 0) {
                     continue;
                 }
-
                 ArrayList<Integer> nextDials = checkAllNextDialPossible(dials, i, j);
-
                 nextDialqueue.addAll(nextDials);
-
                 dialstoNextDial.put(dials[i][j], nextDials);
-
             }
         }
 
