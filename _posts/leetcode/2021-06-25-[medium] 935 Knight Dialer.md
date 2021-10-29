@@ -77,7 +77,7 @@ class Solution {
         if (n == 1) {
             return 10;
         }
-        int[][] dials = {{ 1, 2, 3 }, { 4, 5, 6, }, { 7, 8, 9 }, { -1, 0, -1 }};
+        int[][] dials = {{1,2,3},{4,5,6},{7,8,9},{-1,0,-1 }};
 
         HashMap<Integer, ArrayList<Integer>> dialstoNextDial = new HashMap<>();
         Queue<Integer> nextDialqueue = new LinkedList<>();
