@@ -41,6 +41,19 @@ WAS의 세션클러스터링을 위해서는 설정파일에 공유 서버들의
 
 Spring Session은 외부 저장소와의 HttpSession의 연동을 지원하여 이 문제를 해결합니다. 관계형 혹은 Redis와 같은 캐시형 고속 저장소를 이용하여 세션을 보다 안전하게 보관하고 데이터 무결성을 보장합니다. 
 
+#### Controller에서 HttpSession 사용하기
+spring-session에서 
+
+```java
+@PostMapping("/login")
+	public String login(HttpSession session, @RequestBody UserDto requestUserDto){
+		User loginUser = userService.login(requestUserDto);
+		session.setAttribute(SESSION_KEY,loginUser.getUserNo());
+		return "로그인 완료";
+	}
+}
+```
+
 
 
 ### A. Spring - Spring Session - JDBC
@@ -91,9 +104,7 @@ spring.session.store-type=jdbc
 # 세션 타임아웃 설정
 server.servlet.session.timeout=
 # 데이터베이스 생성 타입
-spring.session.jdbc.initialize-schema=embedded 
-# 데이터베이스 스키마가 저장될 경로
-spring.session.jdbc.schema=classpath:org/springframework/session/jdbc/schema-@@platform@@.sql
+spring.session.jdbc.initialize-schema=always 
 # 데이터베이스에 세션을 저장할 테이블명
 spring.session.jdbc.table-name=SPRING_SESSION
 # 데이터베이스 호스트 주소. 데이터베이터명도 함께 명시
