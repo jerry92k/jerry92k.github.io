@@ -5,16 +5,11 @@ date:   2021-11-07 00:00:00
 categories: se
 ---
 
-지난 포스트에서 다룬 [REST와 RESTful API 탐구](https://jerry92k.github.io/se/2021/10/28/RESTful-API.html)에 이어서,
-
-이번 포스트에서는,
-
-**RESTful API는 왜 지키기 어려울까** 에 대해 다루고자 합니다.
-
+지난 포스트에서 다룬 [REST와 RESTful API 탐구](https://jerry92k.github.io/se/2021/10/28/RESTful-API.html)에 이어서 이번 포스트에서는 **RESTful API는 왜 지키기 어려울까** 에 대해 다루고자 합니다.
 
 ### REST 아키텍처에는 6가지 제한 조건이 존재합니다. 
 
-##### - 지난 포스트 참고( [REST와 RESTful API 탐구](https://jerry92k.github.io/se/2021/10/28/RESTful-API.html))
+#### - 지난 포스트 참고( [REST와 RESTful API 탐구](https://jerry92k.github.io/se/2021/10/28/RESTful-API.html))
 
 1. Client–server architecture(클라이언트 서버 아키텍처)
 
@@ -27,7 +22,7 @@ categories: se
 5. Cacheability
 
 6. Layered system
-
+  
 
 
 대부분의 조건은
@@ -101,7 +96,7 @@ Content-Type: application/vnd.movie+json
 
 [ { "title": "interstella", "director": "Christopher Nolan" } ]
 ```
-
+  
 
 
 2. **헤더 정보의 Link 이용 **: profile relation을 이용하여 명세 전달
