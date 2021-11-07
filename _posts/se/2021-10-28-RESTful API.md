@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  RESTful API
+title:  REST와 RESTful API 탐구
 date:   2021-10-28 00:00:00
 categories: se
 ---
