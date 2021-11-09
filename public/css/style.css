@@ -184,6 +184,10 @@ a.nav-item:hover { color: #777; }
 .post-list > li {
 }
 
+.post-list-item {
+	margin: 10px 0px;
+}
+
 .post-link {
 	margin-left: 10px;
 	font-size: 110%;
