@@ -1,6 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
-@import url('https://fonts.googleapis.com/css?family=Gelasio|Kulim+Park|Nanum+Myeongjo|Nanum+Gothic|Noto+Sans|Noto+Sans+KR|Roboto&display=swap');
-@import url(syntax/monokai.css);
+@import url(syntax/tango.css);
 
 :root {
   --blue: #007bff;
@@ -50,10 +49,11 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Nanum Gothic', sans-serif;
-	color: #2c3e50;
+	color:black;
 }
 
 a {
+	color: cadetblue;
 	text-decoration: none;
 	background-color: transparent;
 }
@@ -86,7 +86,7 @@ code {
 }
 
 li {
-	margin: 10px 0px;
+	margin: 0px 0px;
 }
 
 .container {
@@ -236,7 +236,7 @@ article {
 	padding: 0 5% 0;
 	font-size: 17px;
 	margin-bottom: 100px;
-	line-height: 2.1;
+	line-height: 1.8;
 }
 
 article.home div a, article.home pre a { color: #2c3e50; }
@@ -253,7 +253,7 @@ blockquote {
 
 p {
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
 }
 
 article h1,
@@ -367,6 +367,14 @@ strong {
 	 padding-bottom: 2%;
 	 font-size: 20px;
  }
+
+ .markdown-body{
+	box-sizing:border-box;
+	min-width: 200px;
+	max-width: 980px;
+	margin: 0 auto;
+	padding : 45px;
+}
 
 @media (max-width: 576px) {
 	article {
